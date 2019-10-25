@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cursos sem nome</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" href="css/all.min.css">
+
+  <style>
+    @media(max-width: 1200px) {
+      .formulario-assinar {
+        margin-bottom: 5rem;
+      }
+    }
+    @media(min-width: 1201px) {
+      .formulario-assinar {                
+       margin-bottom: 20rem; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  		<a class="navbar-brand" href="index.html"><img class="img-fluid" src="imagens/logo.png" width="30" alt="Cursos"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item active">
+        				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#">Preços</a>
+      				</li>
+      				<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          					Planos
+        				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html#planos">Start</a>
+                    <a class="dropdown-item" href="index.html#planos">Plus <span class="badge badge-danger">Mais vendido</span></a>
+                    <a class="dropdown-item" href="index.html#planos">Vitalício</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Outras opções</a>
+                </div>
+      				</li>
+    			</ul>
+    			<form class="form-inline my-2 my-lg-0">
+      				<input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search">
+      				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Buscar</button>
+    			</form>
+  		</div>
+	</nav>
+</header>
+
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4 text-center">Assinar plano</h1>        
+  </div>
+</div>
+
+<div class="container">
+  	<form class="formulario-assinar  js-formulario-assinar" novalidate>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="plano">Plano</label>
+          <select id="plano" class="form-control custom-select" required>
+            <option selected value="">Selecione o plano</option>
+            <option value="1">Start</option>
+            <option value="2">Plus</option>
+            <option value="3">Master</option>
+          </select> 
+          <div class="invalid-feedback">
+             Plano é obrigatório!
+          </div>         
+        </div>        
+        <div class="col-md-6 mb-3">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Nome" required>         
+          <div class="invalid-feedback">
+             Nome é obrigatório!
+          </div>
+        </div>        
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="email">E-mail</label>
+          <input type="text" class="form-control" id="email" placeholder="exemplo@email.com" aria-describedby="inputGroupPrepend3" required>
+          <div class="invalid-feedback">
+             E-mail é obrigatório!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+          <div class="invalid-feedback">
+            Cidade é obrigatória!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="estado">Estado</label>
+          <input type="text" class="form-control" id="estado" placeholder="Estado" required>
+          <div class="invalid-feedback">
+            Estado é obrigatório!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" id="cep" placeholder="CEP" required>
+          <div class="invalid-feedback">
+            CEP é obrigatório!
+          </div>
+        </div>
+      </div>
+     
+      <button class="btn btn-primary" type="submit">Assinar</button>
+    </form> 
+</div>
+ 
+<footer class="footer bg-dark text-white text-center">  
+  <p class="p-4 m-0">&#169; Cursos sem nome</p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('js-formulario-assinar');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
